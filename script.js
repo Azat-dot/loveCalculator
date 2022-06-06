@@ -31,20 +31,35 @@
 
 ///////lesson 129
 
-function isLeap(year) {
+// function isLeap(year) {
             
-        //   if (year%4 === 0 && year%100 !== 0) {
-        //      return ('Leap year.');
-        //   }  else if (year%4 === 0 && year%100 === 0 && year%400 === 0){return ('Leap year.');}
-        //   else {return ('Not leap year.');}
+//     if (year%4 === 0 && year%100 !== 0) {
+//        return ('Leap year.');
+//     }  else if (year%4 === 0 && year%100 === 0 && year%400 === 0){return ('Leap year.');}
+//     else {return ('Not leap year.');}
 
-        if (year % 4 === 0) {
-            if (year % 100 === 0){
-                if(year % 400 === 0) {
-                    return 'Leap year.'
-                } else {return 'Not leap year.'}
-            } else {return 'Leap year.'}
-        } else {return 'Not leap year.'}         
-    }
- console.log(isLeap(1990));
+////////////second version
 
+//         if (year % 4 === 0) {
+//             if (year % 100 === 0){
+//                 if(year % 400 === 0) {
+//                     return 'Leap year.'
+//                 } else {return 'Not leap year.'}
+//             } else {return 'Leap year.'}
+//         } else {return 'Not leap year.'}         
+//     }
+//  console.log(isLeap(1990));
+
+//////Lesson 131
+
+function guest() {
+const guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+
+let guestName = prompt("Your name?");
+
+if (guestList.includes(guestName)){return "You are welcom";
+} else { return "Sorry, you are not invited"}
+
+}
+
+alert(guest());
