@@ -52,14 +52,23 @@
 
 //////Lesson 131
 
-function guest() {
+// function guest() {
+// const guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+
+// let guestName = prompt("Your name?");
+
+// if (guestList.includes(guestName)){return "You are welcom";
+// } else { return "Sorry, you are not invited"}
+
+// }
+
+// alert(guest());
+
+/////or 
+
 const guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
 
 let guestName = prompt("Your name?");
 
-if (guestList.includes(guestName)){return "You are welcom";
-} else { return "Sorry, you are not invited"}
-
-}
-
-alert(guest());
+if (guestList.includes(guestName)) { alert ("You are welcom");
+} else { alert ("Sorry, you are not invited");}
