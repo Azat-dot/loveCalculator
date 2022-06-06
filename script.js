@@ -1,5 +1,5 @@
 
-//Lesson 128
+///////Lesson 128
 // prompt("What is your name?");
 // prompt("what is the name of your favored person?")
 
@@ -10,21 +10,34 @@
 // alert(`Your chances are ${m}  percent`)
 
 
-// Lesson 129
+/////// Lesson 129
 
-prompt("Your weight?")
-prompt("Your height?")
+// prompt("Your weight?")
+// prompt("Your height?")
 
-function bmiCalculator (weight, height) {
-    let bmi = Math.floor(weight / (height * height));
-    let expression;
+// function bmiCalculator (weight, height) {
+//     let bmi = Math.floor(weight / (height * height));
+//     let expression;
     
-    if (bmi <= 18){
-       expression = `Your BMI is ${bmi}, so you are underweight.`
-   ; } else if (bmi >= 19 && bmi < 25) {
-        expression = `Your BMI is ${bmi}, so you have a normal weight.`;} else {
-        expression =  `Your BMI is ${bmi}, so you are overweight.` ; }
-    return expression;
+//     if (bmi <= 18){
+//        expression = `Your BMI is ${bmi}, so you are underweight.`
+//    ; } else if (bmi >= 19 && bmi < 25) {
+//         expression = `Your BMI is ${bmi}, so you have a normal weight.`;} else {
+//         expression =  `Your BMI is ${bmi}, so you are overweight.` ; }
+//     return expression;
+//     }
+// alert(bmiCalculator(75, 1.77));
+    
+
+///////lesson 129
+
+function isLeap(year) {
+            
+          if (year%4 === 0 && year%100 !== 0) {
+             return ('Leap year.');
+          }  else if (year%4 === 0 && year%100 === 0 && year%400 === 0){return ('Leap year.');}
+          else {return ('Not leap year.');}
+               
     }
-alert(bmiCalculator(75, 1.77));
-    
+ alert (isLeap(2002));
+
