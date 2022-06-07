@@ -66,9 +66,15 @@
 
 /////or 
 
-const guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+// const guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
 
-let guestName = prompt("Your name?");
+// let guestName = prompt("Your name?");
 
-if (guestList.includes(guestName)) { alert ("You are welcom");
-} else { alert ("Sorry, you are not invited");}
+// if (guestList.includes(guestName)) { alert ("You are welcom");
+// } else { alert ("Sorry, you are not invited");}
+
+///////// Leson 132
+
+let output = []; 
+let count = 0; 
+function fizzBuzz() { count++; if (count % 3 = 0) { output.push("fizz"); } if else (count % 5 = 0) { output.push("Buzz"); } if else (count % 3 = 0 && count % 5 = 0){ output.push("FizzBuzz"); } else {output.push(count);} console.log(output); }
