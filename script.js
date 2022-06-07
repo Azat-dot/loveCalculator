@@ -75,6 +75,36 @@
 
 ///////// Leson 132
 
-let output = []; 
-let count = 0; 
-function fizzBuzz() { count++; if (count % 3 = 0) { output.push("fizz"); } if else (count % 5 = 0) { output.push("Buzz"); } if else (count % 3 = 0 && count % 5 = 0){ output.push("FizzBuzz"); } else {output.push(count);} console.log(output); }
+// let output = []; 
+// let count = 1; 
+
+// function fizzBuzz() { 
+   
+//     if (count % 3 === 0 && count % 5 === 0){ 
+//         output.push("FizzBuzz");
+//     } 
+//     else if (count % 3 === 0) { 
+//         output.push("Fizz"); 
+//     } 
+//     else if (count % 5 === 0) { 
+//         output.push("Buzz"); 
+//     } 
+//     else {output.push(count);
+//     } 
+
+//     count++;     
+//     console.log(output); 
+// }
+
+
+/////// Leson 133
+
+const names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+
+function whosPaying(names) {
+    
+    let name = names[Math.floor(Math.random() * (names.length + 1))];
+    
+    return (`${name} is going to buy lunch today!`)
+    
+    }
