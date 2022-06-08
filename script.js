@@ -99,12 +99,35 @@
 
 /////// Leson 133
 
-const names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+// const names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
 
-function whosPaying(names) {
+// function whosPaying(names) {
     
-    let name = names[Math.floor(Math.random() * (names.length + 1))];
+//     let name = names[Math.floor(Math.random() * (names.length + 1))];
     
-    return (`${name} is going to buy lunch today!`)
+//     return (`${name} is going to buy lunch today!`)
     
+//     }
+
+////////Lesson 135
+
+let numberOfBottles = 99;
+
+function beer () {
+    while (numberOfBottles >= 0) {
+        let sentenceTake = "Take one down, pass it around"
+        let bottleWord = "bottles"
+          if (numberOfBottles === 1){
+            bottleWord = "bottle";
+        } else if (numberOfBottles === 0) {
+             numberOfBottles = "No more", sentenceTake = " Go shope buy bottle of beer" ;
+        } 
+        
+        console.log(`${numberOfBottles} ${bottleWord} of beer on the wall, ${numberOfBottles} of beer`);
+        numberOfBottles--;
+        console.log(sentenceTake)
+        console.log(`${numberOfBottles} ${bottleWord} of beer on the wall.`);
+
     }
+
+}
